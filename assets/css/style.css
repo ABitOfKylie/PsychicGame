@@ -28,7 +28,7 @@ h2 {
 	background-color:#7736c9;
 	padding:35px 10px;
 	max-width:45%;
-	margin:20px 180px;
+	margin:103px -19px;
 	text-align:center;
 	border-radius:120px;
 	float:right;
@@ -60,19 +60,39 @@ button{
 	cursor:pointer;
 }
 
+#greeting{
+	font-size:31px;
+	font-family:fantasy;
+	color:indigo;
+	width:308px;
+	height:100px;
+	line-height: 175%;
+	border: 5px midnightblue;
+	background: radial-gradient(thistle,mediumpurple,indigo);
+	padding:35px 10px;
+	max-width:45%;
+	margin:55px 70px 10px 10px;
+	text-align:center;
+	border-radius:120px;
+	float:right;
+
+}
+
 .results{
 	font-size:30px;
 	font-weight:bold;
-	font-color:white;
+	font-color:indigo;
+	width:255px;
+	height:auto;
+	padding:15px;
 	margin-left:50px;
-	border:10px solid white;
-}
-
-/*#greeting{
-	font-size:30px;
+	border:2px solid midnightblue;
+	background: radial-gradient(thistle,mediumpurple,indigo);
+	border-radius:40px;
 
 }
-#wins {
+
+/*#wins {
 	font-size:30px;
 	font-weight:bold;
 	font-color:white;

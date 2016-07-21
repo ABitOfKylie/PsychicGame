@@ -19,17 +19,17 @@
 		<section id="maincontent">
 				<div>
 				<button onclick = "inviteFunction()">Start!</button>
-				<p id="greeting"></p>
+				<p id="greeting">Hello! So and So. Let's Play</p>
 				</div>
 
-				<h2 id="grad">Guess <br> what letter <be> I'm thinking of!</h2>
+				<h2 id="grad">Guess <br> what letter <br> I'm thinking of!</h2>
 		</section>			
 				
 		<section class="results">		
 				<p id="wins">Wins = 0</p>
 				<p id="loss"> Losses = 0</p>
 				<p id="grem">Guesses Left = ?</p>
-				<p id="gcount">Your<br> guesses<br> so far =</p>
+				<p id="gcount">Your guesses so far =</p>
 		</section>
 		
 
@@ -38,91 +38,7 @@
 <script type="text/javascript">
 
 
-	
 
-var alphabet =['a','b','c','d','e','f','g','h','i','j','k','m','n','o','p']
-var compChoice = alphabet [Math.floor(Math.random()*alphabet.length].toLowerCase();
-var userGuess =[]
-//don't forget keyevent - .toLowerCase*/
-
-
-
-var wins
-var word
-var numberOf
-var userGuess = String.fromCharCode(event.keycode).toLowerCase();
-var gardenWords =["pansy","roses","gnome"]
-var spaces = [_ ,_ ,_ ,_ ,_ ,_ ]
-var foundletters =[]
-var wordChoice=Pullword function ????
-
-//HangmanGame functions start here
-
-Pullword=function(){
-	wordChoice=gardenWords[(Math.floor(Math.random()*gardenWords.length))];
-}
-
-Underline=function{
-	Pullword();
-	for(i=0;i<wordChoice.length;i++);{
-		gardenWords[i] = wordChoice.charAt(i);
-		spaces[i] ="_";
-	}
-	spaces=wordChoice.join("");
-	document.getElementbyID(numletters).innerHTML=wordChoice.length + " letters";
-
-}
-
-}
-
-
-
-
-//Start tallies for results
-var wins = 0;
-var losses = 0;
-var ties = 0;
-
-
-//When the user presses the key - it records the keypress and then sets that as usersChoice - note CharCode converts number of key to the letter we see, thereafter changed to lower case to avoid non-matches due to case
-
-document.onkeyup = function(rps){
-	var userGuess = String.fromCharCode(event.keycode).toLowerCase();
-}
-	// not sure why - array brackets and not ()
-	var compGuess = compChoices [Math.floor(Math.random()*compChoices.length];
-
-If ((userGuess === 'r') && (compGuess === 's')){
-	wins++;
-	alert("Wow! You've won" +wins+ " games.");
-}
-else if ((userGuess === 'r') && (compGuess === 'p')){
-	losses++;
-	alert("Oh no! You've lost" +losses+ " games.");
-}
-
-else if ((userGuess === 'p') && (compGuess === 'r')){
-	wins++;
-	alert("Wow! You've won" +wins+ " games.");
-}
-
-else if ((userGuess === 'p') && (compGuess === 's')){
-	losses++;
-	alert("Oh no! You've lost" +losses+ " games.");
-}
-else if ((userGuess === 's') && (compGuess === 'p')){
-	wins++;
-	alert("Wow! You've won" +wins+ " games.");
-}
-else if ((userGuess === 's') && (compGuess === 'r')){
-	losses++;
-	alert("Oh no! You've lost" +losses+ " games.");
-}
-else {
-	ties++;
-	alert("So close, we've tied" +ties+ " times.");
-} 
-*/
 </script>
 </body>
 </html>
