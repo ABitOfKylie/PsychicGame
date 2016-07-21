@@ -10,7 +10,7 @@
 		}
 		var wins = 0;
 		var loss = 0;
-		var grem = (24 - gcount);
+		var grem = 24; // alphabet 26 -2 starting point 4 guesses
 		var userGuessed=[];
 		var gcount=0;
 
@@ -25,13 +25,16 @@
 		 	if userChoice = CompChoice(){
 		 	document.getElementByID("greeting").innerHTML ="Congratulations" + name +"!"  "You Won!";
 		 	wins++
-		 	document.getElementByID("wins").innerHTML ="Congratulations" + name +"!"  "You Won!";
-
+		 	document.getElementByID("wins").innerHTML ="Wins: " wins;
+		 	location.reload();
 		 }
 		 else{
 		 	document.getElementByID("greeting").innerHTML ="Ahhhh" + name +" ,you lost."  "You need to focus!";
 		 	userGuessed.push(userChoice);
 		 	userGuessed.sort();
+		 	grem--
+
+		 	document.getElementByID("loss").innerHTML ="Losses: " loss;
 		 	loss++
 		 	gcount++
 		 }
