@@ -1,9 +1,8 @@
-		/*document.getElementByID("startButton").onclick = inviteFunction;*/ 
 		function inviteFunction(){
 		var yesplay = confirm("Would you like to play\ Mystic Mumbo?");
 		var name =prompt("What is your name?");
-		if (name!=null){
-		/*document.getElementByID("greeting").innerHTML ="Hello" + name + "!" + "Let's play!";*/
+		if (name!=""){
+		document.getElementById("greeting").innerHTML ="Hello " + name + "! " + "Let's play!";
 		alert("Ok, Let's get started! Choose a letter by clicking the letter on the keyboard."); 
 		}	
 		else{
@@ -20,37 +19,34 @@
 
 
 		var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-		
+		var compChoice = letters[Math.floor(Math.random()*letters.length)]; 
+
 		document.onkeydown=function(event){
 			
 			
 			
-		 	var userChoice = String.fromCharCode(event.onkeydown).toLowerCase();
-		 	var compChoice = letters[Math.floor(Math.random()*letters.length)]; 
+		 	var userChoice = String.fromCharCode(event.keyCode).toLowerCase();
 			
-			/*if userChoice != with a letter in the alphabet or in letters[]{
-			alert("Please choose a letter from A to Z. I don't do symbols.");
-			}
-			else{*/
-				
-
 		 if(userChoice != compChoice){
-		 	for (var i=0; i<compChoice;i++){
-		 		userGuessed [i] ="_";
-		 	}
-		 	document.getElementByID("greeting").innerHTML ="Ahhhh" + name +" ,you lost." + "You need to focus!";
+		 	
+		 
+		 	document.getElementById("greeting").innerHTML ="Ahhhh" + name +" ,you lost." + "You need to focus!";
 		 	userGuessed.push(userChoice);
 		 	userGuessed.sort();
 		 	grem--
-
-		 	document.getElementByID("loss").innerHTML ="Losses: " +loss;
-		 	loss++
+		 	if (grem===0){
+		 		loss++	
+		 	}
+		 	
 		 	gcount++
+		 	document.getElementById("loss").innerHTML ="Losses: " +loss;
+		 	document.getElementById("greeting").innerHTML ="Ahhhh" + name +" ,you lost." + "You need to focus!";
+
 		 }
 		  else{ 
-		 	document.getElementByID("greeting").innerHTML ="Congratulations" + name +"!" + "You Won!";
+		 	document.getElementById("greeting").innerHTML ="Congratulations" + name +"!" + "You Won!";
 		 	wins++
-		 	document.getElementByID("wins").innerHTML ="Wins: "+ wins;
+		 	document.getElementById("wins").innerHTML ="Wins: "+ wins;
 		 	location.reload(); //hopefully refreshes the page
 		 }
 		}

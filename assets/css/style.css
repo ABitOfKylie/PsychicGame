@@ -1,11 +1,13 @@
 body{
 	background-image:url("../images/purplemystic.jpg");
 	line-height:150%;
+	font-family:fantasy;
+	color:indigo;
 }
 
 h1{
 	font-size:80px;
-	font-color:white;
+	color:black;
 	line-height:250%;
 	font-family:fantasy;
 	border-style: dotted;
@@ -86,10 +88,9 @@ button:active{
 	font-size:30px;
 	font-weight:bold;
 	font-color:indigo;
-	width:255px;
+	width:100%;
 	height:auto;
 	padding:15px;
-	margin-left:50px;
 	border:2px solid midnightblue;
 	background: radial-gradient(thistle,mediumpurple,indigo);
 	border-radius:40px;
