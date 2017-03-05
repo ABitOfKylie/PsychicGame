@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Psychic</title>
-	<link type="text/css" rel="stylesheet" href="assets/css/reset.css"/>
-	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
-	<script src="assets/javascript/game.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <title>Psychic</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 </head>
-	
-	
-<body >
-	<header>
-	<h1>Mystic Madness</h1>
-				<h2 id="grad">Guess <br> what letter <br> I'm thinking of!</h2>
 
-	</header>
- 	<container>
-
-		<section id="maincontent">
-				<div>
-				<button id="startButton" onclick = "inviteFunction()">Start!</button>
-				<p id="greeting">Hello so and so. Let's play</p>
-				</div>
-
-		</section>			
-		<section class="results1">		
+<body>
+    <header>
+        <h1>Mystic Madness</h1>
+        <!-- <h2 id="grad">Guess <br> what letter <br> I'm thinking of!</h2> -->
+    </header>
+    <container>
+        <section id="maincontent">
+            <div>
+                <button id="startButton" onclick="inviteFunction()">Start!</button>
+                <p id="greeting">Hello so and so. Let's play</p>
+            </div>
+            <!-- <h2 id="grad">Guess what letter I'm thinking of!</h2> -->
+            <section class="results">
+                <p id="wins">Wins = 0</p>
+                <br></br>
+                <p id="loss"> Losses = 0</p>
+            </section>
+        </section>
+        <!-- 	<section class="results">
 				<p id="wins">Wins = 0</p>
+				<br>
 				<p id="loss"> Losses = 0</p>
-		</section>
-		<section class="results">
-				<p id="grem">Guesses Left = ?</p>
-				<p id="gcount">Your guesses so far =</p>
-		</section>
-		
+				
 
- 	</container>
-
-<script type="text/javascript">
-
-
-
-</script>
+		</section> -->
+        <section class="guesses">
+            <p id="grem">Guesses Left = ?</p>
+            <p id="gcount">Your guesses so far =</p>
+            <p id="test" class="animated rollIn"></p>
+        </section>
+    </container>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    </script>
+    <footer></footer>
 </body>
+
 </html>
-
-
