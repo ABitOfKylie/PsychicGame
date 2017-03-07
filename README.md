@@ -16,19 +16,7 @@ Math.floor(Math.random()),
 getDocumentById, .innerHTML
 'this'
 
-Note to me: add animation upon win/loss.
+Note to me: add animation
 
-CheckingINput
-Alert to user if something other than a letter is chosen.
-if((event.keyCode) <65 || (event.keyCode) >122){
-	alert("Please choose a letter from A to Z.");
-} or something like....
-if(lettersOnly.test(userChoice)=false){   
-	alert("Please choose a letter from A to Z.");
-}
-	
-if(userChoice =(/^[a-zA-Z]+$/)){
-	alert("Please choose a letter from A to Z.");
-}
-or if(userChoice !=([a-zA-Z])){
+
 
