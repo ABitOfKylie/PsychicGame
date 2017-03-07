@@ -14,7 +14,7 @@
 		// Get a random CompChoice letter and assign it based on a random generator
 		var updateCompChoice = function() {
 		    this.compChoice = this.letters[Math.floor(Math.random() * this.letters.length)];
-		    console.log("Computer's Choice has been updated." + compChoice);
+		    // console.log("Computer's Choice has been updated." + compChoice);
 
 		};
 
@@ -26,7 +26,6 @@
 		        document.getElementById("greeting").innerHTML = "<br />" + "Hello " + name.toUpperCase() + "! " + "<br />" + "Let's play!";
 		        alert("Ok, Let's get started! Choose a letter by clicking the letter on the keyboard.");
 		        updateCompChoice();
-		        console.log("Computer has chosen:" + compChoice);
 		        document.getElementById("grem").innerHTML = "Guesses left= " + (grem);
 
 		        document.getElementById("test").innerHTML = "Hello " + name.toUpperCase() + "! " + "<br />" + "Please choose a letter.";
@@ -47,7 +46,6 @@
 		    grem = 24;
 		    guessList = 0;
 		    updateCompChoice();
-		    console.log("The game has been reset. New CompChoice is:" + compChoice);
 		    document.getElementById("test").innerHTML = "Now, I'm thinking of a new letter. Press any key to start a new game";
 
 
