@@ -77,14 +77,14 @@ button:active{
 	font-size:31px;
 	font-family:fantasy;
 	color:indigo;
-	width:308px;
-	height:270px;
+	width:285px;
+	height:285px;
 	line-height: 175%;
 	border: 5px midnightblue;
 	background: radial-gradient(thistle,mediumpurple,indigo);
-	padding:35px 10px;
+	padding:45px 10px;
 	max-width:45%;
-	margin:55px 70px 10px 10px;
+	margin:0px 70px 10px 10px;
 	text-align:center;
 	border-radius:120px;
 	float:right;
@@ -98,18 +98,19 @@ button:active{
 	font-weight:bold;
 	font-color:indigo;
 	line-height: 120%;
-	width:225px;
-	height:178px;
-	max-width:45%;
-	padding:50px 15px 15px 15px;
-	margin:30px;
-	margin-left:58%;
-	margin-bottom: 6%;
+	width:200px;
+	height:200px;
+	/*max-width:45%;*/
+	padding:65px 15px 15px 15px;
+	/*margin:30px;*/
+	margin-right:25%;
+	/*margin-bottom: 6%;*/
 	border:2px solid midnightblue;
 	background: radial-gradient(thistle,mediumpurple,indigo);
 	border-radius:157px;
 	text-align: center;
-	display:inline-flex;
+	float:right;
+	/*display:inline-flex;*/
 
 }
 
@@ -128,20 +129,45 @@ button:active{
 	font-color:white;
 }*/
 #grem {
-	font-size:30px;
-	font-weight:bold;
-	font-color:white;
+	font-size:31px;
+	font-family:fantasy;
+	color:indigo;
+	width:200px;
+	height:200px;
+	line-height: 175%;
+	border: 5px midnightblue;
+	background: radial-gradient(thistle,mediumpurple,indigo);
+	padding:52px 10px;
+	max-width:45%;
+	margin:55px 70px 10px 10px;
+	text-align:center;
+	border-radius:120px;
 	float:left;
 }
 #gcount{
+	font-size:31px;
+	font-family:fantasy;
+	color:indigo;
+	width:275px;
+	height:275px;
+	line-height: 175%;
+	border: 5px midnightblue;
+	background: radial-gradient(thistle,mediumpurple,indigo);
+	padding:52px 10px;
+	max-width:45%;
+	/*margin:55px 70px 10px 10px;*/
+	text-align:center;
+	border-radius:120px;
+	float:left;
+	word-wrap: break-word;
+
+}
+#test {
 	font-size:30px;
 	font-weight:bold;
 	font-color:white;
-}#test {
-	font-size:30px;
-	font-weight:bold;
-	font-color:white;
-	float:right;
+	line-height: 75px;
+	/*float:right;*/
 
 }
 
@@ -160,3 +186,35 @@ button:active{
 
 
 }
+/*using css keyframes for rotation and color change animation
+need to research the before: after: win
+.results {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: 3;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+Safari 4.0 - 8.0 
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+Standard syntax 
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+/*}*/
